@@ -1,0 +1,29 @@
+<div class="card">
+
+    <!-- <h5 class="card-header">Featured</h5> -->
+    <div class="card-body">
+<!--       <div *ngIf="maestria && maestria.length > 0">
+        <h2>Bienvenido: {{ maestria[0].nombres }} {{ maestria[0].apellidos }}</h2>
+      </div>   -->    
+      <h5 class="card-title">Seleccione programa de maestría y de clic en el botón.</h5>
+      <a routerLink="/review-documents" class="btn btn-primary" (click)="enviarMaestria()">Requisitos / Documentación</a>
+    </div>
+
+    <table class="table table-bordered table-hover">
+        <thead>
+            <tr>
+              <th scope="col">Oferta</th>
+              <th scope="col">Periodo</th>
+            </tr>
+          </thead>
+        <tbody>
+              <tr *ngFor="let oferta of maestria">
+                <td [class.seleccionada]="oferta.ofertum.id_oferta === maestriaSeleccionada" (click)="seleccionarMaestria(oferta.ofertum.id_oferta)">
+                  {{ oferta.ofertum.descripcion }}
+                </td>
+                <td>2023-1</td>
+                
+            </tr>
+          </tbody>
+      </table>
+  </div>

@@ -1,0 +1,93 @@
+<body class="body">
+  <div style="background-image: url('./assets/images/IPG.JPG'); background-size: cover; background-repeat: no-repeat; height: 100vh;">
+  </div>
+</body>
+
+<div (click)="toggleChatWindow()" [ngClass]="{'chatbot-notification': true, 'show': showNotification, 'closedNoti': !showNotification}">
+    <span class="chatbot-notification-text">
+      ¿Tienes dudas?, Pregúntame!
+    </span>
+  </div>
+  
+ 
+    <div class="chatbox" [ngClass]="{'active': isChatOpen, 'closed': !isChatOpen}">
+      
+      <div class="chatbox__support" >
+        <div class="chatbox__header">
+          <div class="chatbox__image--header">
+           <img src="../../../assets/images/icono2.png" alt="LogoChatbot" />
+
+          </div>
+          <div class="chatbox__content--header">
+            <h4 class="chatbox__heading--header">PostgradIA</h4>
+            <p class="chatbox__description--header">Soy el asistente virtual del Instituto de Postgrado</p>
+          </div>
+          <div class="exitChat" (click)="toggleChatWindow()">
+            <button type="button" class="btn-close" aria-label="Close"></button>
+          </div>
+          
+
+        </div>
+        <div class="chatbox__messages" #autoscroll>
+          <ng-container *ngFor="let item of messages; trackBy: trackMessageById">
+            <!-- (click)="onMessageClick($event)" -->
+            <div (click)="onMessageClick($event)"
+                 [ngClass]="{
+                   'messages__item': true,
+                   'messages__item--visitor': item.name === 'PostgradIA',
+                   'messages__item--operator': item.name !== 'PostgradIA'
+                 }">
+                 
+              <!-- Si es la burbuja de escritura, muestra los puntos -->
+              <ng-container *ngIf="item.message === '   '">
+                <div class="typing-bubble"></div>
+                <div class="typing-bubble"></div>
+                <div class="typing-bubble"></div>
+              </ng-container>
+              <!-- Si es un mensaje normal, muestra el contenido del mensaje -->
+              <ng-container *ngIf="item.message !== '   '">
+                <div [innerHTML]="item.message | sanitizeHtml"></div>
+              </ng-container>
+            </div>
+          </ng-container>
+        </div>
+        
+    
+        <div class="chatbox__footer" >
+          <textarea (keydown.enter)="onEnterKeyPress($event)" class="tagtextarea" rows="3" #textInput [value]="selectedOption" placeholder="Escribe tu mensaje..."></textarea>
+         
+<!--             <button (click)="onSendButton()" class="chatbox__send--footer send__button" [disabled]="isSendingMessage">Enviar</button>
+ -->          
+            <div class="btn-group dropup">
+              <button (click)="onSendButton()" type="button" class="chatbox__send--footer send__button" [disabled]="isSendingMessage">Enviar</button>
+              <button type="button" class="btn btn-primary chatbox__send--footer send__button dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+                <span class="visually-hidden">Toggle Dropdown</span>
+              </button>
+              <form class="dropdown-menu p-4">
+                <div class="mb-3">
+                  <label for="exampleDropdownFormEmail2" class="form-label">Escribe un comentario:</label>
+                  <textarea id="commentInput" class="coment" placeholder="Dime tu opinión o sugerencia..." rows="8"></textarea>
+                </div>
+                
+                <button type="submit" class="btn btn-primary"(click)="onSendComent()">Enviar</button>
+                <div #notificationElement class="notificationCom" style="display: none;"></div>
+              </form>
+            </div>
+
+
+        </div>
+        
+      </div>
+
+    </div>
+    <div class="iconoChat" >
+      <div class="chatbox__image--icon" (click)="toggleChatWindow()">
+        <img src="../../../assets/images/logo.png" alt="iconChatbot" draggable="false" />
+
+       </div>
+    
+
+  </div>
+
+
+

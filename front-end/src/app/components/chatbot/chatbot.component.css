@@ -1,0 +1,27 @@
+.dropdown-menu {
+    background-color: #dbe2eb;
+  }
+
+  .btn {
+    background-color: #3074a8;
+    border: none;
+  }
+
+  body{
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .btn-close{
+    --bs-btn-close-focus-shadow:none;
+    filter: brightness(0) invert(1);
+    --bs-btn-close-white-filter:none;
+    --bs-btn-close-opacity:none;
+    --bs-btn-close-hover-opacity:none;
+    font-size: 21px;
+  }
+
+  
+
+
+
+  

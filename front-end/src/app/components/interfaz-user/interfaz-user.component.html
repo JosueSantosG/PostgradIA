@@ -1,0 +1,156 @@
+
+  <div>
+    <button class="btn btn-danger" (click)="logOut()" type="button">LogOut</button>
+  </div>
+  
+<div class="table-responsive">
+<table class="table table-bordered">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Documentos</th>
+        <th scope="col">Formato</th>
+        <th scope="col">D. cargado</th>
+        <th scope="col">Documentos subir</th>
+        <th scope="col">Archivo</th>
+        <th scope="col">Archivo</th>
+        <th scope="col">Validación</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>Cédula de ciudadanía</td>
+        <td>PDF</td>
+        <td>
+          <ng-container *ngIf="userData?.userPersona[0]?.userdocs[0]?.cedula; else noInfo">
+            SI
+          </ng-container>
+          <ng-template #noInfo>
+            NO
+          </ng-template>
+        </td>
+        <td>
+          <div class="mb-3">
+            <input class="form-control" type="file" id="formFile" accept="application/pdf" (change)="getFile($event)">
+          </div>
+        </td>
+        <td><button type="button" class="btn btn-secondary">Descargar</button></td>
+        <td><button type="button" class="btn btn-secondary" (click)="saveFile('cedula')">Guardar</button></td>
+        <td>Por validar</td>
+      </tr>
+      
+      <tr>
+        <th scope="row">2</th>
+        <td>Certificado de votación vigente</td>
+        <td>PDF</td>
+        <td>
+          <ng-container *ngIf="userData?.userPersona[0]?.userdocs[0]?.certificado; else noCertificado">
+            SI
+          </ng-container>
+          <ng-template #noCertificado>
+            NO
+          </ng-template>
+        </td>
+        <td>
+          <div class="mb-3">
+            <input class="form-control" type="file" id="formFile" accept="application/pdf" (change)="getFile($event)">
+          </div>
+        </td>
+        <td><button type="button" class="btn btn-secondary">Descargar</button></td>
+        <td><button type="button" class="btn btn-secondary" (click)="saveFile('certificado')">Guardar</button></td>
+        <td>Por validar</td>
+      </tr>
+      
+      <tr>
+        <th scope="row">3</th>
+        <td>Solicitud de ingreso</td>
+        <td>PDF</td>
+        <td>
+          <ng-container *ngIf="userData?.userPersona[0]?.userdocs[0]?.solicitud; else noSolicitud">
+            SI
+          </ng-container>
+          <ng-template #noSolicitud>
+            NO
+          </ng-template>
+        </td>
+        <td>
+          <div class="mb-3">
+            <input class="form-control" type="file" id="formFile" accept="application/pdf" (change)="getFile($event)">
+          </div>
+        </td>
+        <td><button type="button" class="btn btn-secondary">Descargar</button></td>
+        <td><button type="button" class="btn btn-secondary" (click)="saveFile('solicitud')">Guardar</button></td>
+        <td>Por validar</td>
+      </tr>
+      
+      <tr>
+        <th scope="row">4</th>
+        <td>Título de tercer nivel</td>
+        <td>PDF</td>
+        <td>
+          <ng-container *ngIf="userData?.userPersona[0]?.userdocs[0]?.titulo; else noTitulo">
+            SI
+          </ng-container>
+          <ng-template #noTitulo>
+            NO
+          </ng-template>
+        </td>
+        <td>
+          <div class="mb-3">
+            <input class="form-control" type="file" id="formFile" accept="application/pdf" (change)="getFile($event)">
+          </div>
+        </td>
+        <td><button type="button" class="btn btn-secondary">Descargar</button></td>
+        <td><button type="button" class="btn btn-secondary" (click)="saveFile('titulo')">Guardar</button></td>
+        <td>Por validar</td>
+      </tr>
+      
+      <tr>
+        <th scope="row">5</th>
+        <td>Comprobante de pago</td>
+        <td>PDF</td>
+        <td>
+          <ng-container *ngIf="userData?.userPersona[0]?.userdocs[0]?.comprobante; else noComprobante">
+            SI
+          </ng-container>
+          <ng-template #noComprobante>
+            NO
+          </ng-template>
+        </td>
+        <td>
+          <div class="mb-3">
+            <input class="form-control" type="file" id="formFile" accept="application/pdf" (change)="getFile($event)">
+          </div>
+        </td>
+        <td><button type="button" class="btn btn-secondary">Descargar</button></td>
+        <td><button type="button" class="btn btn-secondary" (click)="saveFile('comprobante')">Guardar</button></td>
+        <td>Por validar</td>
+      </tr>
+      
+      <tr>
+        <th scope="row">6</th>
+        <td>Hoja de vida formato UPSE</td>
+        <td>PDF</td>
+        <td>
+          <ng-container *ngIf="userData?.userPersona[0]?.userdocs[0]?.hojadevida; else noHojaDeVida">
+            SI
+          </ng-container>
+          <ng-template #noHojaDeVida>
+            NO
+          </ng-template>
+        </td>
+        <td>
+          <div class="mb-3">
+            <input class="form-control" type="file" id="formFile" accept="application/pdf" (change)="getFile($event)">
+          </div>
+        </td>
+        <td><button type="button" class="btn btn-secondary">Descargar</button></td>
+        <td><button type="button" class="btn btn-secondary" (click)="saveFile('hojadevida')">Guardar</button></td>
+        <td>Por validar</td>
+      </tr>
+      
+
+    </tbody>
+  </table>
+</div>

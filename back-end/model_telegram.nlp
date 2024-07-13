@@ -1,0 +1,2145 @@
+{
+  "settings": {
+    "languages": [
+      "es"
+    ],
+    "forceNER": true,
+    "tag": "nlp",
+    "threshold": 0.5,
+    "autoLoad": true,
+    "autoSave": true,
+    "modelFileName": "model.nlp",
+    "executeActionsBeforeAnswers": false,
+    "calculateSentiment": true
+  },
+  "nluManager": {
+    "settings": {
+      "tag": "nlu-manager"
+    },
+    "locales": [
+      "es"
+    ],
+    "languageNames": {},
+    "domainManagers": {
+      "es": {
+        "settings": {
+          "locale": "es",
+          "trainByDomain": false,
+          "tag": "domain-manager-es",
+          "nluByDomain": {
+            "default": {
+              "className": "NeuralNlu",
+              "settings": {}
+            }
+          },
+          "useStemDict": true
+        },
+        "stemDict": {
+          "como,llam,te": {
+            "intent": "nombot.nombot",
+            "domain": "default"
+          },
+          "cual,nombr,ser,tu": {
+            "intent": "nombot.nombot",
+            "domain": "default"
+          },
+          "hol": {
+            "intent": "saludo.saludo",
+            "domain": "default"
+          },
+          "ey,que,tal": {
+            "intent": "saludo.saludo",
+            "domain": "default"
+          },
+          "como,esta": {
+            "intent": "saludo.saludo",
+            "domain": "default"
+          },
+          "buen,dia": {
+            "intent": "saludo.saludo",
+            "domain": "default"
+          },
+          "adi,ahor,por": {
+            "intent": "despedida.despedida",
+            "domain": "default"
+          },
+          "nos,ver": {
+            "intent": "despedida.despedida",
+            "domain": "default"
+          },
+          "deb,ir": {
+            "intent": "despedida.despedida",
+            "domain": "default"
+          },
+          "hast,lueg": {
+            "intent": "despedida.despedida",
+            "domain": "default"
+          },
+          "bye": {
+            "intent": "despedida.despedida",
+            "domain": "default"
+          },
+          "cha": {
+            "intent": "despedida.despedida",
+            "domain": "default"
+          },
+          "grac": {
+            "intent": "gracias.gracias",
+            "domain": "default"
+          },
+          "eso,ser,util": {
+            "intent": "gracias.gracias",
+            "domain": "default"
+          },
+          "agradec,el,te": {
+            "intent": "gracias.gracias",
+            "domain": "default"
+          },
+          "me,much,serv": {
+            "intent": "gracias.gracias",
+            "domain": "default"
+          },
+          "inscrib,quer": {
+            "intent": "inscripcion.inscripcion",
+            "domain": "default"
+          },
+          "como,el,hac,inscripcion,par": {
+            "intent": "inscripcion.inscripcion",
+            "domain": "default"
+          },
+          "inscrib,necesit,par,que": {
+            "intent": "inscripcion.inscripcion",
+            "domain": "default"
+          },
+          "dond,inscrib,me": {
+            "intent": "inscripcion.inscripcion",
+            "domain": "default"
+          },
+          "quer,registr": {
+            "intent": "inscripcion.inscripcion",
+            "domain": "default"
+          },
+          "dond,me,registr": {
+            "intent": "inscripcion.inscripcion",
+            "domain": "default"
+          },
+          "cienc,del,mar": {
+            "intent": "facultades.fac_cmar",
+            "domain": "default"
+          },
+          "acuicultur,dam,el,en,inform,maestr,mas,sobr": {
+            "intent": "maestria.acuicultura",
+            "domain": "default"
+          },
+          "acuicultur,en,maestr": {
+            "intent": "maestria.acuicultura",
+            "domain": "default"
+          },
+          "acuicultur": {
+            "intent": "maestria.acuicultura",
+            "domain": "default"
+          },
+          "acuicultur,de,el,en,inform,maestr,quer": {
+            "intent": "maestria.acuicultura",
+            "domain": "default"
+          },
+          "acuicultur,cuant,de,dur,el,maestr": {
+            "intent": "maestria.acuicultura",
+            "domain": "default"
+          },
+          "acuicultur,en,obten,que,titul": {
+            "intent": "maestria.acuicultura",
+            "domain": "default"
+          },
+          "acui,de,el,maestr,modal,ten,virtual": {
+            "intent": "maestria.acuicultura",
+            "domain": "default"
+          },
+          "acuicultur,modal,que,ten": {
+            "intent": "maestria.acuicultura",
+            "domain": "default"
+          },
+          "acuicultur,cual,de,el,resolu,ser": {
+            "intent": "maestria.acuicultura",
+            "domain": "default"
+          },
+          "acuicultur,corr,cual,de,ser": {
+            "intent": "maestria.acuicultura",
+            "domain": "default"
+          },
+          "acuicultur,cost,cual,de,el,ser": {
+            "intent": "maestria.costo_acui",
+            "domain": "default"
+          },
+          "acuicultur,cual,de,el,ser,valor": {
+            "intent": "maestria.costo_acui",
+            "domain": "default"
+          },
+          "acuicultur,cuant,de,el,maestr,pag,por,se": {
+            "intent": "maestria.costo_acui",
+            "domain": "default"
+          },
+          "acuicultur,cuant,deb,el,en,maestr,pag": {
+            "intent": "maestria.costo_acui",
+            "domain": "default"
+          },
+          "acuicultur,prec,que,ten": {
+            "intent": "maestria.costo_acui",
+            "domain": "default"
+          },
+          "acuicultur,de,el,maestr,que,val": {
+            "intent": "maestria.costo_acui",
+            "domain": "default"
+          },
+          "acuicultur,cuant,de,el,en,hab,maestr,modul": {
+            "intent": "modulos.mod_acui",
+            "domain": "default"
+          },
+          "acuicultur,de,el,maestr,modul": {
+            "intent": "modulos.mod_acui",
+            "domain": "default"
+          },
+          "acuicultur,modul,que,ten": {
+            "intent": "modulos.mod_acui",
+            "domain": "default"
+          },
+          "academ,acuicultur,cuant,de,el,maestr,period,ten": {
+            "intent": "modulos.mod_acui",
+            "domain": "default"
+          },
+          "acuicultur,asignatur,de,dim,el": {
+            "intent": "modulos.asig_acui",
+            "domain": "default"
+          },
+          "acuicultur,cual,de,el,mall,ser": {
+            "intent": "modulos.asig_acui",
+            "domain": "default"
+          },
+          "acuicultur,cual,de,el,mat,ser": {
+            "intent": "modulos.asig_acui",
+            "domain": "default"
+          }
+        },
+        "intentDict": {
+          "nombot.nombot": "default",
+          "saludo.saludo": "default",
+          "despedida.despedida": "default",
+          "gracias.gracias": "default",
+          "inscripcion.inscripcion": "default",
+          "facultades.fac_cmar": "default",
+          "maestria.acuicultura": "default",
+          "maestria.costo_acui": "default",
+          "modulos.mod_acui": "default",
+          "modulos.asig_acui": "default"
+        },
+        "sentences": [
+          {
+            "domain": "default",
+            "utterance": "Como te llamas",
+            "intent": "nombot.nombot"
+          },
+          {
+            "domain": "default",
+            "utterance": "cual es tu nombre",
+            "intent": "nombot.nombot"
+          },
+          {
+            "domain": "default",
+            "utterance": "Hola",
+            "intent": "saludo.saludo"
+          },
+          {
+            "domain": "default",
+            "utterance": "Ey, que tal",
+            "intent": "saludo.saludo"
+          },
+          {
+            "domain": "default",
+            "utterance": "Como estas",
+            "intent": "saludo.saludo"
+          },
+          {
+            "domain": "default",
+            "utterance": "Buenos dias",
+            "intent": "saludo.saludo"
+          },
+          {
+            "domain": "default",
+            "utterance": "adios por ahora",
+            "intent": "despedida.despedida"
+          },
+          {
+            "domain": "default",
+            "utterance": "Nos vemos",
+            "intent": "despedida.despedida"
+          },
+          {
+            "domain": "default",
+            "utterance": "debo irme",
+            "intent": "despedida.despedida"
+          },
+          {
+            "domain": "default",
+            "utterance": "Hasta luego",
+            "intent": "despedida.despedida"
+          },
+          {
+            "domain": "default",
+            "utterance": "bye",
+            "intent": "despedida.despedida"
+          },
+          {
+            "domain": "default",
+            "utterance": "Chao",
+            "intent": "despedida.despedida"
+          },
+          {
+            "domain": "default",
+            "utterance": "Gracias",
+            "intent": "gracias.gracias"
+          },
+          {
+            "domain": "default",
+            "utterance": "Eso es util",
+            "intent": "gracias.gracias"
+          },
+          {
+            "domain": "default",
+            "utterance": "Te lo agradezco",
+            "intent": "gracias.gracias"
+          },
+          {
+            "domain": "default",
+            "utterance": "Me sirvio mucho",
+            "intent": "gracias.gracias"
+          },
+          {
+            "domain": "default",
+            "utterance": "quiero inscribirme",
+            "intent": "inscripcion.inscripcion"
+          },
+          {
+            "domain": "default",
+            "utterance": "como hago para la inscripcion",
+            "intent": "inscripcion.inscripcion"
+          },
+          {
+            "domain": "default",
+            "utterance": "que necesito para inscribirme",
+            "intent": "inscripcion.inscripcion"
+          },
+          {
+            "domain": "default",
+            "utterance": "donde me inscribo",
+            "intent": "inscripcion.inscripcion"
+          },
+          {
+            "domain": "default",
+            "utterance": "quiero registrarme",
+            "intent": "inscripcion.inscripcion"
+          },
+          {
+            "domain": "default",
+            "utterance": "donde me registro",
+            "intent": "inscripcion.inscripcion"
+          },
+          {
+            "domain": "default",
+            "utterance": "ciencias del mar",
+            "intent": "facultades.fac_cmar"
+          },
+          {
+            "domain": "default",
+            "utterance": "dame mas informacion sobre la maestria en Acuicultura",
+            "intent": "maestria.acuicultura"
+          },
+          {
+            "domain": "default",
+            "utterance": "maestria en Acuicultura",
+            "intent": "maestria.acuicultura"
+          },
+          {
+            "domain": "default",
+            "utterance": "acuicultura",
+            "intent": "maestria.acuicultura"
+          },
+          {
+            "domain": "default",
+            "utterance": "quiero informacion de la Maestria en Acuicultura",
+            "intent": "maestria.acuicultura"
+          },
+          {
+            "domain": "default",
+            "utterance": "cuanto dura la maestria de acuicultura",
+            "intent": "maestria.acuicultura"
+          },
+          {
+            "domain": "default",
+            "utterance": "que titulo obtendre en acuicultura",
+            "intent": "maestria.acuicultura"
+          },
+          {
+            "domain": "default",
+            "utterance": "la maestria de acui tiene modalidad virtual",
+            "intent": "maestria.acuicultura"
+          },
+          {
+            "domain": "default",
+            "utterance": "que modalidad tiene Acuicultura",
+            "intent": "maestria.acuicultura"
+          },
+          {
+            "domain": "default",
+            "utterance": "cual es la resolucion de Acuicultura",
+            "intent": "maestria.acuicultura"
+          },
+          {
+            "domain": "default",
+            "utterance": "cual es correo de Acuicultura",
+            "intent": "maestria.acuicultura"
+          },
+          {
+            "domain": "default",
+            "utterance": "Cual es el costo de Acuicultura",
+            "intent": "maestria.costo_acui"
+          },
+          {
+            "domain": "default",
+            "utterance": "cual es el valor de acuicultura",
+            "intent": "maestria.costo_acui"
+          },
+          {
+            "domain": "default",
+            "utterance": "cuanto se paga por la maestria de acuicultura",
+            "intent": "maestria.costo_acui"
+          },
+          {
+            "domain": "default",
+            "utterance": "cuanto debo pagar en la maestria acuicultura",
+            "intent": "maestria.costo_acui"
+          },
+          {
+            "domain": "default",
+            "utterance": "que precio tiene acuicultura",
+            "intent": "maestria.costo_acui"
+          },
+          {
+            "domain": "default",
+            "utterance": "que vale la maestria de acuicultura",
+            "intent": "maestria.costo_acui"
+          },
+          {
+            "domain": "default",
+            "utterance": "cuantos modulos hay en la maestria de acuicultura",
+            "intent": "modulos.mod_acui"
+          },
+          {
+            "domain": "default",
+            "utterance": "modulos de la maestria de acuicultura",
+            "intent": "modulos.mod_acui"
+          },
+          {
+            "domain": "default",
+            "utterance": "que modulos tiene acuicultura",
+            "intent": "modulos.mod_acui"
+          },
+          {
+            "domain": "default",
+            "utterance": "cuantos periodos academicos tiene la maestria de acuicultura",
+            "intent": "modulos.mod_acui"
+          },
+          {
+            "domain": "default",
+            "utterance": "dime las asignaturas de acuicultura",
+            "intent": "modulos.asig_acui"
+          },
+          {
+            "domain": "default",
+            "utterance": "cual es la malla de acuicultura",
+            "intent": "modulos.asig_acui"
+          },
+          {
+            "domain": "default",
+            "utterance": "cuales son las materias de acuicultura",
+            "intent": "modulos.asig_acui"
+          }
+        ],
+        "domains": {
+          "master_domain": {
+            "settings": {
+              "locale": "es",
+              "tag": "nlu-es",
+              "keepStopwords": true,
+              "nonefeatureValue": 1,
+              "nonedeltaMultiplier": 1.2,
+              "spellCheck": false,
+              "spellCheckDistance": 1,
+              "filterZeros": true,
+              "log": true
+            },
+            "features": {
+              "como": 1,
+              "te": 1,
+              "llam": 1,
+              "cual": 1,
+              "ser": 1,
+              "tu": 1,
+              "nombr": 1,
+              "hol": 1,
+              "ey": 1,
+              "que": 1,
+              "tal": 1,
+              "esta": 1,
+              "buen": 1,
+              "dia": 1,
+              "adi": 1,
+              "por": 1,
+              "ahor": 1,
+              "nos": 1,
+              "ver": 1,
+              "deb": 1,
+              "ir": 1,
+              "hast": 1,
+              "lueg": 1,
+              "bye": 1,
+              "cha": 1,
+              "grac": 1,
+              "eso": 1,
+              "util": 1,
+              "el": 1,
+              "agradec": 1,
+              "me": 1,
+              "serv": 1,
+              "much": 1,
+              "quer": 1,
+              "inscrib": 1,
+              "hac": 1,
+              "par": 1,
+              "inscripcion": 1,
+              "necesit": 1,
+              "dond": 1,
+              "registr": 1,
+              "cienc": 1,
+              "del": 1,
+              "mar": 1,
+              "dam": 1,
+              "mas": 1,
+              "inform": 1,
+              "sobr": 1,
+              "maestr": 1,
+              "en": 1,
+              "acuicultur": 1,
+              "de": 1,
+              "cuant": 1,
+              "dur": 1,
+              "titul": 1,
+              "obten": 1,
+              "acui": 1,
+              "ten": 1,
+              "modal": 1,
+              "virtual": 1,
+              "resolu": 1,
+              "corr": 1,
+              "cost": 1,
+              "valor": 1,
+              "se": 1,
+              "pag": 1,
+              "prec": 1,
+              "val": 1,
+              "modul": 1,
+              "hab": 1,
+              "period": 1,
+              "academ": 1,
+              "dim": 1,
+              "asignatur": 1,
+              "mall": 1,
+              "mat": 1
+            },
+            "intents": {
+              "nombot.nombot": 1,
+              "saludo.saludo": 1,
+              "despedida.despedida": 1,
+              "gracias.gracias": 1,
+              "inscripcion.inscripcion": 1,
+              "facultades.fac_cmar": 1,
+              "maestria.acuicultura": 1,
+              "maestria.costo_acui": 1,
+              "modulos.mod_acui": 1,
+              "modulos.asig_acui": 1
+            },
+            "intentFeatures": {
+              "nombot.nombot": {
+                "como": 1,
+                "te": 1,
+                "llam": 1,
+                "cual": 1,
+                "ser": 1,
+                "tu": 1,
+                "nombr": 1
+              },
+              "saludo.saludo": {
+                "hol": 1,
+                "ey": 1,
+                "que": 1,
+                "tal": 1,
+                "como": 1,
+                "esta": 1,
+                "buen": 1,
+                "dia": 1
+              },
+              "despedida.despedida": {
+                "adi": 1,
+                "por": 1,
+                "ahor": 1,
+                "nos": 1,
+                "ver": 1,
+                "deb": 1,
+                "ir": 1,
+                "hast": 1,
+                "lueg": 1,
+                "bye": 1,
+                "cha": 1
+              },
+              "gracias.gracias": {
+                "grac": 1,
+                "eso": 1,
+                "ser": 1,
+                "util": 1,
+                "te": 1,
+                "el": 1,
+                "agradec": 1,
+                "me": 1,
+                "serv": 1,
+                "much": 1
+              },
+              "inscripcion.inscripcion": {
+                "quer": 1,
+                "inscrib": 1,
+                "como": 1,
+                "hac": 1,
+                "par": 1,
+                "el": 1,
+                "inscripcion": 1,
+                "que": 1,
+                "necesit": 1,
+                "dond": 1,
+                "me": 1,
+                "registr": 1
+              },
+              "facultades.fac_cmar": {
+                "cienc": 1,
+                "del": 1,
+                "mar": 1
+              },
+              "maestria.acuicultura": {
+                "dam": 1,
+                "mas": 1,
+                "inform": 1,
+                "sobr": 1,
+                "el": 1,
+                "maestr": 1,
+                "en": 1,
+                "acuicultur": 1,
+                "quer": 1,
+                "de": 1,
+                "cuant": 1,
+                "dur": 1,
+                "que": 1,
+                "titul": 1,
+                "obten": 1,
+                "acui": 1,
+                "ten": 1,
+                "modal": 1,
+                "virtual": 1,
+                "cual": 1,
+                "ser": 1,
+                "resolu": 1,
+                "corr": 1
+              },
+              "maestria.costo_acui": {
+                "cual": 1,
+                "ser": 1,
+                "el": 1,
+                "cost": 1,
+                "de": 1,
+                "acuicultur": 1,
+                "valor": 1,
+                "cuant": 1,
+                "se": 1,
+                "pag": 1,
+                "por": 1,
+                "maestr": 1,
+                "deb": 1,
+                "en": 1,
+                "que": 1,
+                "prec": 1,
+                "ten": 1,
+                "val": 1
+              },
+              "modulos.mod_acui": {
+                "cuant": 1,
+                "modul": 1,
+                "hab": 1,
+                "en": 1,
+                "el": 1,
+                "maestr": 1,
+                "de": 1,
+                "acuicultur": 1,
+                "que": 1,
+                "ten": 1,
+                "period": 1,
+                "academ": 1
+              },
+              "modulos.asig_acui": {
+                "dim": 1,
+                "el": 1,
+                "asignatur": 1,
+                "de": 1,
+                "acuicultur": 1,
+                "cual": 1,
+                "ser": 1,
+                "mall": 1,
+                "mat": 1
+              }
+            },
+            "featuresToIntent": {
+              "como": [
+                "nombot.nombot",
+                "saludo.saludo",
+                "inscripcion.inscripcion"
+              ],
+              "te": [
+                "nombot.nombot",
+                "gracias.gracias"
+              ],
+              "llam": [
+                "nombot.nombot"
+              ],
+              "cual": [
+                "nombot.nombot",
+                "maestria.acuicultura",
+                "maestria.costo_acui",
+                "modulos.asig_acui"
+              ],
+              "ser": [
+                "nombot.nombot",
+                "gracias.gracias",
+                "maestria.acuicultura",
+                "maestria.costo_acui",
+                "modulos.asig_acui"
+              ],
+              "tu": [
+                "nombot.nombot"
+              ],
+              "nombr": [
+                "nombot.nombot"
+              ],
+              "hol": [
+                "saludo.saludo"
+              ],
+              "ey": [
+                "saludo.saludo"
+              ],
+              "que": [
+                "saludo.saludo",
+                "inscripcion.inscripcion",
+                "maestria.acuicultura",
+                "maestria.costo_acui",
+                "modulos.mod_acui"
+              ],
+              "tal": [
+                "saludo.saludo"
+              ],
+              "esta": [
+                "saludo.saludo"
+              ],
+              "buen": [
+                "saludo.saludo"
+              ],
+              "dia": [
+                "saludo.saludo"
+              ],
+              "adi": [
+                "despedida.despedida"
+              ],
+              "por": [
+                "despedida.despedida",
+                "maestria.costo_acui"
+              ],
+              "ahor": [
+                "despedida.despedida"
+              ],
+              "nos": [
+                "despedida.despedida"
+              ],
+              "ver": [
+                "despedida.despedida"
+              ],
+              "deb": [
+                "despedida.despedida",
+                "maestria.costo_acui"
+              ],
+              "ir": [
+                "despedida.despedida"
+              ],
+              "hast": [
+                "despedida.despedida"
+              ],
+              "lueg": [
+                "despedida.despedida"
+              ],
+              "bye": [
+                "despedida.despedida"
+              ],
+              "cha": [
+                "despedida.despedida"
+              ],
+              "grac": [
+                "gracias.gracias"
+              ],
+              "eso": [
+                "gracias.gracias"
+              ],
+              "util": [
+                "gracias.gracias"
+              ],
+              "el": [
+                "gracias.gracias",
+                "inscripcion.inscripcion",
+                "maestria.acuicultura",
+                "maestria.costo_acui",
+                "modulos.mod_acui",
+                "modulos.asig_acui"
+              ],
+              "agradec": [
+                "gracias.gracias"
+              ],
+              "me": [
+                "gracias.gracias",
+                "inscripcion.inscripcion"
+              ],
+              "serv": [
+                "gracias.gracias"
+              ],
+              "much": [
+                "gracias.gracias"
+              ],
+              "quer": [
+                "inscripcion.inscripcion",
+                "maestria.acuicultura"
+              ],
+              "inscrib": [
+                "inscripcion.inscripcion"
+              ],
+              "hac": [
+                "inscripcion.inscripcion"
+              ],
+              "par": [
+                "inscripcion.inscripcion"
+              ],
+              "inscripcion": [
+                "inscripcion.inscripcion"
+              ],
+              "necesit": [
+                "inscripcion.inscripcion"
+              ],
+              "dond": [
+                "inscripcion.inscripcion"
+              ],
+              "registr": [
+                "inscripcion.inscripcion"
+              ],
+              "cienc": [
+                "facultades.fac_cmar"
+              ],
+              "del": [
+                "facultades.fac_cmar"
+              ],
+              "mar": [
+                "facultades.fac_cmar"
+              ],
+              "dam": [
+                "maestria.acuicultura"
+              ],
+              "mas": [
+                "maestria.acuicultura"
+              ],
+              "inform": [
+                "maestria.acuicultura"
+              ],
+              "sobr": [
+                "maestria.acuicultura"
+              ],
+              "maestr": [
+                "maestria.acuicultura",
+                "maestria.costo_acui",
+                "modulos.mod_acui"
+              ],
+              "en": [
+                "maestria.acuicultura",
+                "maestria.costo_acui",
+                "modulos.mod_acui"
+              ],
+              "acuicultur": [
+                "maestria.acuicultura",
+                "maestria.costo_acui",
+                "modulos.mod_acui",
+                "modulos.asig_acui"
+              ],
+              "de": [
+                "maestria.acuicultura",
+                "maestria.costo_acui",
+                "modulos.mod_acui",
+                "modulos.asig_acui"
+              ],
+              "cuant": [
+                "maestria.acuicultura",
+                "maestria.costo_acui",
+                "modulos.mod_acui"
+              ],
+              "dur": [
+                "maestria.acuicultura"
+              ],
+              "titul": [
+                "maestria.acuicultura"
+              ],
+              "obten": [
+                "maestria.acuicultura"
+              ],
+              "acui": [
+                "maestria.acuicultura"
+              ],
+              "ten": [
+                "maestria.acuicultura",
+                "maestria.costo_acui",
+                "modulos.mod_acui"
+              ],
+              "modal": [
+                "maestria.acuicultura"
+              ],
+              "virtual": [
+                "maestria.acuicultura"
+              ],
+              "resolu": [
+                "maestria.acuicultura"
+              ],
+              "corr": [
+                "maestria.acuicultura"
+              ],
+              "cost": [
+                "maestria.costo_acui"
+              ],
+              "valor": [
+                "maestria.costo_acui"
+              ],
+              "se": [
+                "maestria.costo_acui"
+              ],
+              "pag": [
+                "maestria.costo_acui"
+              ],
+              "prec": [
+                "maestria.costo_acui"
+              ],
+              "val": [
+                "maestria.costo_acui"
+              ],
+              "modul": [
+                "modulos.mod_acui"
+              ],
+              "hab": [
+                "modulos.mod_acui"
+              ],
+              "period": [
+                "modulos.mod_acui"
+              ],
+              "academ": [
+                "modulos.mod_acui"
+              ],
+              "dim": [
+                "modulos.asig_acui"
+              ],
+              "asignatur": [
+                "modulos.asig_acui"
+              ],
+              "mall": [
+                "modulos.asig_acui"
+              ],
+              "mat": [
+                "modulos.asig_acui"
+              ]
+            },
+            "neuralNetwork": {
+              "settings": {
+                "locale": "es",
+                "tag": "nlu-es",
+                "keepStopwords": true,
+                "nonefeatureValue": 1,
+                "nonedeltaMultiplier": 1.2,
+                "spellCheck": false,
+                "spellCheckDistance": 1,
+                "filterZeros": true,
+                "log": true
+              },
+              "features": [
+                "como",
+                "te",
+                "llam",
+                "cual",
+                "ser",
+                "tu",
+                "nombr",
+                "hol",
+                "ey",
+                "que",
+                "tal",
+                "esta",
+                "buen",
+                "dia",
+                "adi",
+                "por",
+                "ahor",
+                "nos",
+                "ver",
+                "deb",
+                "ir",
+                "hast",
+                "lueg",
+                "bye",
+                "cha",
+                "grac",
+                "eso",
+                "util",
+                "el",
+                "agradec",
+                "me",
+                "serv",
+                "much",
+                "quer",
+                "inscrib",
+                "hac",
+                "par",
+                "inscripcion",
+                "necesit",
+                "dond",
+                "registr",
+                "cienc",
+                "del",
+                "mar",
+                "dam",
+                "mas",
+                "inform",
+                "sobr",
+                "maestr",
+                "en",
+                "acuicultur",
+                "de",
+                "cuant",
+                "dur",
+                "titul",
+                "obten",
+                "acui",
+                "ten",
+                "modal",
+                "virtual",
+                "resolu",
+                "corr",
+                "cost",
+                "valor",
+                "se",
+                "pag",
+                "prec",
+                "val",
+                "modul",
+                "hab",
+                "period",
+                "academ",
+                "dim",
+                "asignatur",
+                "mall",
+                "mat"
+              ],
+              "intents": [
+                "nombot.nombot",
+                "saludo.saludo",
+                "despedida.despedida",
+                "gracias.gracias",
+                "inscripcion.inscripcion",
+                "facultades.fac_cmar",
+                "maestria.acuicultura",
+                "maestria.costo_acui",
+                "modulos.mod_acui",
+                "modulos.asig_acui"
+              ],
+              "perceptrons": [
+                [
+                  3.072951316833496,
+                  4.743224620819092,
+                  6.5041704177856445,
+                  2.921417236328125,
+                  1.9276999235153198,
+                  4.739023208618164,
+                  4.739023208618164,
+                  -0.38512590527534485,
+                  -0.20737901329994202,
+                  -0.25931891798973083,
+                  -0.20737901329994202,
+                  -3.023261070251465,
+                  -0.2353639453649521,
+                  -0.2353639453649521,
+                  -0.18573133647441864,
+                  -0.18573133647441864,
+                  -0.18573133647441864,
+                  -0.2223380208015442,
+                  -0.2223380208015442,
+                  -0.22771590948104858,
+                  -0.22771590948104858,
+                  -0.22161681950092316,
+                  -0.22161681950092316,
+                  -0.28353485465049744,
+                  -0.27490589022636414,
+                  -0.26651930809020996,
+                  -0.9879502654075623,
+                  -0.9879502654075623,
+                  -2.9366214275360107,
+                  -1.761374831199646,
+                  -0.20409296452999115,
+                  -0.0985167920589447,
+                  -0.0985167920589447,
+                  -0.19386039674282074,
+                  -0.18383890390396118,
+                  -0.38597607612609863,
+                  -0.4223145842552185,
+                  -0.38597607612609863,
+                  -0.023202259093523026,
+                  -0.09281878918409348,
+                  -0.13353224098682404,
+                  -0.10617498308420181,
+                  -0.10617498308420181,
+                  -0.10617498308420181,
+                  -0.00870418082922697,
+                  -0.00870418082922697,
+                  -0.014735721983015537,
+                  -0.00870418082922697,
+                  -0.04461752250790596,
+                  -0.03783143311738968,
+                  -1.8918330669403076,
+                  -1.8336329460144043,
+                  -0.002920873463153839,
+                  -0.002920873463153839,
+                  -0.0034554684534668922,
+                  -0.0034554684534668922,
+                  -0.0037866251077502966,
+                  -0.008848235942423344,
+                  -0.008848235942423344,
+                  -0.0037866251077502966,
+                  -0.2884097695350647,
+                  -1.0839853286743164,
+                  -0.19192799925804138,
+                  -0.11255118250846863,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  -0.05292701721191406,
+                  -0.01218058355152607,
+                  -0.0423479564890642
+                ],
+                [
+                  3.7229464054107666,
+                  -3.3059163093566895,
+                  -3.0032012462615967,
+                  -0.4798986613750458,
+                  -1.1843143701553345,
+                  -0.4638081192970276,
+                  -0.4638081192970276,
+                  11.615861892700195,
+                  4.905789375305176,
+                  1.8780362606048584,
+                  4.905789375305176,
+                  7.955507278442383,
+                  5.843924045562744,
+                  5.843924045562744,
+                  -0.8848439455032349,
+                  -0.8848439455032349,
+                  -0.8848439455032349,
+                  -1.3086520433425903,
+                  -1.3086520433425903,
+                  -1.3074275255203247,
+                  -1.3074275255203247,
+                  -1.3064250946044922,
+                  -1.3064250946044922,
+                  -2.577608823776245,
+                  -2.5724635124206543,
+                  -2.566972017288208,
+                  -0.7043654322624207,
+                  -0.7043654322624207,
+                  -1.723225474357605,
+                  -0.25293228030204773,
+                  -1.1430944204330444,
+                  -0.7248579263687134,
+                  -0.7248579263687134,
+                  -1.38644540309906,
+                  -1.4900197982788086,
+                  -1.229615569114685,
+                  -2.1324410438537598,
+                  -1.229615569114685,
+                  -0.9000732898712158,
+                  -0.41332003474235535,
+                  -1.205531120300293,
+                  -0.8641971349716187,
+                  -0.8641971349716187,
+                  -0.8641971349716187,
+                  -0.028711041435599327,
+                  -0.028711041435599327,
+                  -0.04774373769760132,
+                  -0.028711041435599327,
+                  -0.2719338834285736,
+                  -0.749416172504425,
+                  -2.5847465991973877,
+                  -0.13935144245624542,
+                  -0.008955197408795357,
+                  -0.008955197408795357,
+                  -0.5911129713058472,
+                  -0.5911129713058472,
+                  -0.01721835695207119,
+                  -1.4722113609313965,
+                  -0.5435478091239929,
+                  -0.01721835695207119,
+                  0,
+                  -0.008045325055718422,
+                  0,
+                  0,
+                  0,
+                  0,
+                  -0.4803902208805084,
+                  -0.0713644027709961,
+                  -0.4402579665184021,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  2.592678938467174
+                ],
+                [
+                  -2.769918203353882,
+                  -1.5454844236373901,
+                  -0.6616030335426331,
+                  -0.8678622841835022,
+                  -2.1014387607574463,
+                  -0.7371801137924194,
+                  -0.7371801137924194,
+                  -4.391127109527588,
+                  -1.190000295639038,
+                  -2.0604166984558105,
+                  -1.190000295639038,
+                  -1.6689964532852173,
+                  -2.2193281650543213,
+                  -2.2193281650543213,
+                  3.3442275524139404,
+                  3.157273530960083,
+                  3.3442275524139404,
+                  4.9237189292907715,
+                  4.9237189292907715,
+                  4.742641448974609,
+                  5.105052947998047,
+                  4.923987865447998,
+                  4.923987865447998,
+                  9.788585662841797,
+                  9.772396087646484,
+                  -4.416783809661865,
+                  -1.2151546478271484,
+                  -1.2151546478271484,
+                  -2.198228359222412,
+                  -0.8495449423789978,
+                  -2.0875375270843506,
+                  -1.187598466873169,
+                  -1.187598466873169,
+                  -2.570735216140747,
+                  -2.0107221603393555,
+                  -0.3634207248687744,
+                  -0.8410422801971436,
+                  -0.3634207248687744,
+                  -0.4123614430427551,
+                  -0.8828188180923462,
+                  -1.8769806623458862,
+                  -1.4841755628585815,
+                  -1.4841755628585815,
+                  -1.4841755628585815,
+                  -0.10325546562671661,
+                  -0.10325546562671661,
+                  -0.13948240876197815,
+                  -0.10325546562671661,
+                  -1.2817808389663696,
+                  -1.048984408378601,
+                  -4.419443130493164,
+                  -0.4947139024734497,
+                  -0.590049684047699,
+                  -0.03673049435019493,
+                  -0.1111854761838913,
+                  -0.1111854761838913,
+                  -0.1015690341591835,
+                  -0.4052174985408783,
+                  -0.2637200951576233,
+                  -0.1015690341591835,
+                  -0.00593025516718626,
+                  -0.09195132553577423,
+                  0,
+                  0,
+                  -0.15213921666145325,
+                  -0.5390040874481201,
+                  -0.0630321279168129,
+                  0,
+                  -0.040925174951553345,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  4.443798087660924
+                ],
+                [
+                  -3.223921537399292,
+                  3.4838380813598633,
+                  -2.3807570934295654,
+                  -2.480720043182373,
+                  2.4011576175689697,
+                  -1.0302542448043823,
+                  -1.0302542448043823,
+                  -2.099271059036255,
+                  -0.6022993922233582,
+                  -0.9150798320770264,
+                  -0.6022993922233582,
+                  -0.1421869546175003,
+                  -1.0597591400146484,
+                  -1.0597591400146484,
+                  -0.7065531015396118,
+                  -0.7065531015396118,
+                  -0.7065531015396118,
+                  -1.059723973274231,
+                  -1.059723973274231,
+                  -1.0727940797805786,
+                  -1.0465859174728394,
+                  -1.0596522092819214,
+                  -1.0596522092819214,
+                  -2.088670253753662,
+                  -2.082777976989746,
+                  12.084253311157227,
+                  4.881880760192871,
+                  4.881880760192871,
+                  2.8164002895355225,
+                  5.864607334136963,
+                  2.3236923217773438,
+                  4.920595645904541,
+                  4.920595645904541,
+                  -1.0026710033416748,
+                  -1.9358853101730347,
+                  -0.6563327312469482,
+                  -0.9164217710494995,
+                  -0.6563327312469482,
+                  -0.19801472127437592,
+                  -2.596853256225586,
+                  -1.849722146987915,
+                  -0.7356023788452148,
+                  -0.7356023788452148,
+                  -0.7356023788452148,
+                  -0.23456956446170807,
+                  -0.23456956446170807,
+                  -0.3214849829673767,
+                  -0.23456956446170807,
+                  -0.9783619046211243,
+                  -0.454883873462677,
+                  -2.4790189266204834,
+                  -2.2116904258728027,
+                  -0.15254926681518555,
+                  -0.08932942152023315,
+                  -0.020786063745617867,
+                  -0.020786063745617867,
+                  -0.4238435924053192,
+                  -0.44989901781082153,
+                  -0.44989901781082153,
+                  -0.4238435924053192,
+                  -0.376263290643692,
+                  -0.0696779191493988,
+                  -0.316838800907135,
+                  -0.2572440207004547,
+                  0,
+                  -0.023279421031475067,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  -0.12343879789113998,
+                  -0.12343879789113998,
+                  -0.18902020156383514,
+                  -0.16666744649410248,
+                  2.1204727309797398
+                ],
+                [
+                  0.808824896812439,
+                  -1.4091646671295166,
+                  -0.8476829528808594,
+                  -0.4580928385257721,
+                  -0.7003309726715088,
+                  -0.2968465983867645,
+                  -0.2968465983867645,
+                  -0.8315662741661072,
+                  -0.7444339990615845,
+                  0.10579763352870941,
+                  -0.7444339990615845,
+                  -1.5965524911880493,
+                  -0.5018353462219238,
+                  -0.5018353462219238,
+                  -0.3769936263561249,
+                  -0.3769936263561249,
+                  -0.3769936263561249,
+                  -0.49252229928970337,
+                  -0.49252229928970337,
+                  -0.4814395308494568,
+                  -0.4814395308494568,
+                  -0.4705063998699188,
+                  -0.4705063998699188,
+                  -0.7883726358413696,
+                  -0.7874197363853455,
+                  -0.7866719365119934,
+                  -0.19134372472763062,
+                  -0.19134372472763062,
+                  1.0747153759002686,
+                  -0.49436354637145996,
+                  2.524519920349121,
+                  -1.687355875968933,
+                  -1.687355875968933,
+                  6.741575241088867,
+                  6.756141185760498,
+                  3.3185245990753174,
+                  4.977416515350342,
+                  3.3185245990753174,
+                  1.6588869094848633,
+                  4.217322826385498,
+                  6.756351947784424,
+                  -0.5141993165016174,
+                  -0.5141993165016174,
+                  -0.5141993165016174,
+                  -0.13260143995285034,
+                  -0.13260143995285034,
+                  -1.159924864768982,
+                  -0.13260143995285034,
+                  -1.7385838031768799,
+                  -1.5271331071853638,
+                  -2.6947481632232666,
+                  -1.4834727048873901,
+                  -0.0713692232966423,
+                  -0.0713692232966423,
+                  -0.12710553407669067,
+                  -0.12710553407669067,
+                  -0.15648233890533447,
+                  -0.7182678580284119,
+                  -0.36704352498054504,
+                  -0.15648233890533447,
+                  -0.07137290388345718,
+                  -0.004141317680478096,
+                  -0.025462862104177475,
+                  -0.00596661027520895,
+                  0,
+                  0,
+                  -0.10909122973680496,
+                  -0.01712062582373619,
+                  -0.10220302641391754,
+                  0,
+                  0,
+                  0,
+                  -0.0118690961971879,
+                  -0.0118690961971879,
+                  0,
+                  0,
+                  0.7876145040694976
+                ],
+                [
+                  -0.3191278576850891,
+                  -0.1932726800441742,
+                  -0.13114681839942932,
+                  -0.15212701261043549,
+                  -0.25640982389450073,
+                  -0.1145087331533432,
+                  -0.1145087331533432,
+                  -0.337173193693161,
+                  -0.1270936280488968,
+                  -0.266829252243042,
+                  -0.1270936280488968,
+                  -0.16126161813735962,
+                  -0.21860788762569427,
+                  -0.21860788762569427,
+                  -0.16428609192371368,
+                  -0.16428609192371368,
+                  -0.16428609192371368,
+                  -0.2105766385793686,
+                  -0.2105766385793686,
+                  -0.20598796010017395,
+                  -0.20598796010017395,
+                  -0.2063807249069214,
+                  -0.2063807249069214,
+                  -0.31448206305503845,
+                  -0.31227487325668335,
+                  -0.3118172287940979,
+                  -0.08923567086458206,
+                  -0.08923567086458206,
+                  -0.20365051925182343,
+                  -0.04544617235660553,
+                  -0.21082185208797455,
+                  -0.1087595745921135,
+                  -0.1087595745921135,
+                  -0.23673869669437408,
+                  -0.1831689476966858,
+                  -0.0057516442611813545,
+                  -0.03377889096736908,
+                  -0.0057516442611813545,
+                  -0.02479054406285286,
+                  -0.09835226833820343,
+                  -0.15740379691123962,
+                  4.657917499542236,
+                  4.657917499542236,
+                  4.657917499542236,
+                  -0.025808798149228096,
+                  -0.025808798149228096,
+                  -0.04925340414047241,
+                  -0.025808798149228096,
+                  -0.18969301879405975,
+                  -0.15783172845840454,
+                  -0.4651745855808258,
+                  -0.12241779267787933,
+                  -0.010808508843183517,
+                  -0.010808508843183517,
+                  -0.02317999117076397,
+                  -0.02317999117076397,
+                  -0.03435396030545235,
+                  -0.1118885725736618,
+                  -0.06835807114839554,
+                  -0.03435396030545235,
+                  -0.005924099124968052,
+                  -0.016896912828087807,
+                  -0.00018455027020536363,
+                  0,
+                  0,
+                  0,
+                  -0.019306059926748276,
+                  0,
+                  -0.01039319857954979,
+                  0,
+                  0,
+                  0,
+                  -0.0023303173948079348,
+                  -0.0023303173948079348,
+                  0,
+                  0,
+                  0.3119447551041581
+                ],
+                [
+                  -0.852501630783081,
+                  -0.31798774003982544,
+                  -0.31798774003982544,
+                  -1.1624748706817627,
+                  -1.4398823976516724,
+                  -0.2067490518093109,
+                  -0.2067490518093109,
+                  -1.3382103443145752,
+                  -0.062488775700330734,
+                  -5.47070837020874,
+                  -0.062488775700330734,
+                  -0.5208110809326172,
+                  -0.6860932111740112,
+                  -0.6860932111740112,
+                  0,
+                  -2.1044085025787354,
+                  0,
+                  -0.6855273246765137,
+                  -0.6855273246765137,
+                  -3.4685542583465576,
+                  0,
+                  -0.6849583983421326,
+                  -0.6849583983421326,
+                  -1.3271485567092896,
+                  -1.3221580982208252,
+                  -1.3170191049575806,
+                  -0.27343693375587463,
+                  -0.27343693375587463,
+                  -6.9408183097839355,
+                  0,
+                  -0.5217064619064331,
+                  -0.4233752191066742,
+                  -0.4233752191066742,
+                  0.7116258144378662,
+                  -1.9780175685882568,
+                  0,
+                  -0.016439005732536316,
+                  0,
+                  -0.016439005732536316,
+                  -0.08894500136375427,
+                  -1.9698818922042847,
+                  -0.4523952305316925,
+                  -0.4523952305316925,
+                  -0.4523952305316925,
+                  0.4154689610004425,
+                  0.4154689610004425,
+                  4.9564995765686035,
+                  0.4154689610004425,
+                  1.2247705459594727,
+                  1.287609338760376,
+                  11.152578353881836,
+                  0.23807670176029205,
+                  -2.2596867084503174,
+                  9.470107078552246,
+                  2.864720582962036,
+                  2.864720582962036,
+                  5.313462734222412,
+                  -1.0048974752426147,
+                  8.440038681030273,
+                  5.313462734222412,
+                  10.888008117675781,
+                  4.008326053619385,
+                  -4.66356086730957,
+                  -4.548910140991211,
+                  -2.1044085025787354,
+                  -5.939216613769531,
+                  -6.110436916351318,
+                  -4.185396671295166,
+                  -7.100727081298828,
+                  -3.23542857170105,
+                  -2.3722736835479736,
+                  -2.3722736835479736,
+                  -2.8731162548065186,
+                  -2.8731162548065186,
+                  -3.2686896324157715,
+                  -3.1906726360321045,
+                  1.4009303501747992
+                ],
+                [
+                  -0.07126190513372421,
+                  -0.5759589672088623,
+                  -0.021425606682896614,
+                  1.710973858833313,
+                  1.4525036811828613,
+                  -1.0669658184051514,
+                  -1.0669658184051514,
+                  -0.010317476466298103,
+                  -1.4338527917861938,
+                  5.144625663757324,
+                  -1.4338527917861938,
+                  -0.0010117286583408713,
+                  -0.0022389653604477644,
+                  -0.0022389653604477644,
+                  -0.6721497774124146,
+                  1.7356902360916138,
+                  -0.6721497774124146,
+                  -0.00026485571288503706,
+                  -0.00026485571288503706,
+                  3.711630344390869,
+                  -1.4364452362060547,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  -0.2310558706521988,
+                  -0.2310558706521988,
+                  3.3923540115356445,
+                  -0.5486776828765869,
+                  0,
+                  0,
+                  0,
+                  -0.5075100064277649,
+                  -0.9443814158439636,
+                  -0.041957754641771317,
+                  -0.9880452752113342,
+                  -0.041957754641771317,
+                  -0.9443814158439636,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  -0.7239100337028503,
+                  -0.7239100337028503,
+                  -1.2695459127426147,
+                  -0.7239100337028503,
+                  1.4553337097167969,
+                  -1.1668256521224976,
+                  1.968840479850769,
+                  -1.622951865196228,
+                  -0.37385982275009155,
+                  -2.56929612159729,
+                  -1.839699387550354,
+                  -1.839699387550354,
+                  0,
+                  0.12481921911239624,
+                  -4.913774013519287,
+                  0,
+                  -4.589419841766357,
+                  -1.2212713956832886,
+                  9.664459228515625,
+                  9.654840469360352,
+                  2.4341249465942383,
+                  7.582180976867676,
+                  9.289225578308105,
+                  6.224174976348877,
+                  -5.884347438812256,
+                  -2.036393165588379,
+                  -2.9108378887176514,
+                  -2.9108378887176514,
+                  -2.1826725006103516,
+                  -2.1826725006103516,
+                  -5.444721221923828,
+                  -5.1889777183532715,
+                  -2.2777085626119455
+                ],
+                [
+                  -0.2121497392654419,
+                  -0.22026686370372772,
+                  -0.05055219680070877,
+                  -1.5599147081375122,
+                  -1.5599147081375122,
+                  0,
+                  0,
+                  -0.05845021456480026,
+                  -0.21547168493270874,
+                  -0.7909493446350098,
+                  -0.21547168493270874,
+                  -0.04213495925068855,
+                  -0.04829559102654457,
+                  -0.04829559102654457,
+                  -0.043292589485645294,
+                  -1.196834683418274,
+                  -0.043292589485645294,
+                  -0.04464076831936836,
+                  -0.04464076831936836,
+                  -0.30272576212882996,
+                  -0.04285602271556854,
+                  -0.04114246740937233,
+                  -0.04114246740937233,
+                  -0.040400464087724686,
+                  -0.038745228201150894,
+                  -0.03715777024626732,
+                  0,
+                  0,
+                  -0.14160503447055817,
+                  -0.14761389791965485,
+                  -0.06281872093677521,
+                  -0.0282137393951416,
+                  -0.0282137393951416,
+                  -1.0233358144760132,
+                  -0.19098393619060516,
+                  -0.07566803693771362,
+                  -0.25078901648521423,
+                  -0.07566803693771362,
+                  -0.13976769149303436,
+                  -0.021725961938500404,
+                  -0.025378700345754623,
+                  -0.019281290471553802,
+                  -0.019281290471553802,
+                  -0.019281290471553802,
+                  -0.6504073143005371,
+                  -0.6504073143005371,
+                  -1.8431097269058228,
+                  -0.6504073143005371,
+                  1.5862250328063965,
+                  -2.3225834369659424,
+                  0.480471670627594,
+                  1.3040627241134644,
+                  0.8617919683456421,
+                  -3.0562291145324707,
+                  -0.09094812721014023,
+                  -0.09094812721014023,
+                  -1.3360817432403564,
+                  3.5584352016448975,
+                  -2.410792589187622,
+                  -1.3360817432403564,
+                  0,
+                  0,
+                  0,
+                  0,
+                  -1.135799765586853,
+                  -1.4498801231384277,
+                  -2.0388615131378174,
+                  -1.2089340686798096,
+                  12.262369155883789,
+                  1.4878389835357666,
+                  3.929288387298584,
+                  3.929288387298584,
+                  -1.059346079826355,
+                  -1.059346079826355,
+                  -0.7725176215171814,
+                  -0.5764720439910889,
+                  -1.2221829519304044
+                ],
+                [
+                  -0.681359052658081,
+                  -0.9751226902008057,
+                  -0.04505608603358269,
+                  0.31658363342285156,
+                  -0.09502878785133362,
+                  -0.7281689643859863,
+                  -0.7281689643859863,
+                  -0.036687616258859634,
+                  -0.03514981269836426,
+                  -0.5566210746765137,
+                  -0.03514981269836426,
+                  -0.03178788721561432,
+                  -0.032344039529561996,
+                  -0.032344039529561996,
+                  -0.03098830208182335,
+                  -0.03098830208182335,
+                  -0.03098830208182335,
+                  -0.02968939207494259,
+                  -0.02968939207494259,
+                  -0.0284449253231287,
+                  -0.0284449253231287,
+                  -0.027252623811364174,
+                  -0.027252623811364174,
+                  -0.026110298931598663,
+                  -0.025015855208039284,
+                  -0.023967286571860313,
+                  -0.34919828176498413,
+                  -0.34919828176498413,
+                  2.872555732727051,
+                  -0.885016143321991,
+                  -0.05007312446832657,
+                  -0.016095681115984917,
+                  -0.016095681115984917,
+                  -0.9341056942939758,
+                  -0.04488777369260788,
+                  -0.5277771353721619,
+                  -0.539497971534729,
+                  -0.5277771353721619,
+                  -0.005791808944195509,
+                  -0.021905681118369102,
+                  -0.02318735420703888,
+                  -0.009953202679753304,
+                  -0.009953202679753304,
+                  -0.009953202679753304,
+                  -0.21362735331058502,
+                  -0.21362735331058502,
+                  -1.1688683032989502,
+                  -0.21362735331058502,
+                  -4.230373382568359,
+                  -1.3127650022506714,
+                  1.162105917930603,
+                  2.145848512649536,
+                  -1.5059654712677002,
+                  -1.5059654712677002,
+                  -0.011406878009438515,
+                  -0.011406878009438515,
+                  -0.36436712741851807,
+                  -0.45037293434143066,
+                  -0.45037293434143066,
+                  -0.36436712741851807,
+                  -5.028425693511963,
+                  -2.445730209350586,
+                  -4.973402500152588,
+                  -4.9462995529174805,
+                  0,
+                  0,
+                  0,
+                  -0.3734644949436188,
+                  -0.530386209487915,
+                  0,
+                  0,
+                  0,
+                  4.768518924713135,
+                  4.768518924713135,
+                  9.321952819824219,
+                  9.287837982177734,
+                  -1.429357153577821
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "intentDomains": {},
+    "extraSentences": [
+      [
+        "es",
+        "Como te llamas"
+      ],
+      [
+        "es",
+        "cual es tu nombre"
+      ],
+      [
+        "es",
+        "Hola"
+      ],
+      [
+        "es",
+        "Ey, que tal"
+      ],
+      [
+        "es",
+        "Como estas"
+      ],
+      [
+        "es",
+        "Buenos dias"
+      ],
+      [
+        "es",
+        "adios por ahora"
+      ],
+      [
+        "es",
+        "Nos vemos"
+      ],
+      [
+        "es",
+        "debo irme"
+      ],
+      [
+        "es",
+        "Hasta luego"
+      ],
+      [
+        "es",
+        "bye"
+      ],
+      [
+        "es",
+        "Chao"
+      ],
+      [
+        "es",
+        "Gracias"
+      ],
+      [
+        "es",
+        "Eso es util"
+      ],
+      [
+        "es",
+        "Te lo agradezco"
+      ],
+      [
+        "es",
+        "Me sirvio mucho"
+      ],
+      [
+        "es",
+        "quiero inscribirme"
+      ],
+      [
+        "es",
+        "como hago para la inscripcion"
+      ],
+      [
+        "es",
+        "que necesito para inscribirme"
+      ],
+      [
+        "es",
+        "donde me inscribo"
+      ],
+      [
+        "es",
+        "quiero registrarme"
+      ],
+      [
+        "es",
+        "donde me registro"
+      ],
+      [
+        "es",
+        "ciencias del mar"
+      ],
+      [
+        "es",
+        "dame mas informacion sobre la maestria en Acuicultura"
+      ],
+      [
+        "es",
+        "maestria en Acuicultura"
+      ],
+      [
+        "es",
+        "acuicultura"
+      ],
+      [
+        "es",
+        "quiero informacion de la Maestria en Acuicultura"
+      ],
+      [
+        "es",
+        "cuanto dura la maestria de acuicultura"
+      ],
+      [
+        "es",
+        "que titulo obtendre en acuicultura"
+      ],
+      [
+        "es",
+        "la maestria de acui tiene modalidad virtual"
+      ],
+      [
+        "es",
+        "que modalidad tiene Acuicultura"
+      ],
+      [
+        "es",
+        "cual es la resolucion de Acuicultura"
+      ],
+      [
+        "es",
+        "cual es correo de Acuicultura"
+      ],
+      [
+        "es",
+        "Cual es el costo de Acuicultura"
+      ],
+      [
+        "es",
+        "cual es el valor de acuicultura"
+      ],
+      [
+        "es",
+        "cuanto se paga por la maestria de acuicultura"
+      ],
+      [
+        "es",
+        "cuanto debo pagar en la maestria acuicultura"
+      ],
+      [
+        "es",
+        "que precio tiene acuicultura"
+      ],
+      [
+        "es",
+        "que vale la maestria de acuicultura"
+      ],
+      [
+        "es",
+        "cuantos modulos hay en la maestria de acuicultura"
+      ],
+      [
+        "es",
+        "modulos de la maestria de acuicultura"
+      ],
+      [
+        "es",
+        "que modulos tiene acuicultura"
+      ],
+      [
+        "es",
+        "cuantos periodos academicos tiene la maestria de acuicultura"
+      ],
+      [
+        "es",
+        "dime las asignaturas de acuicultura"
+      ],
+      [
+        "es",
+        "cual es la malla de acuicultura"
+      ],
+      [
+        "es",
+        "cuales son las materias de acuicultura"
+      ]
+    ]
+  },
+  "ner": {
+    "settings": {
+      "tag": "ner",
+      "entityPreffix": "%",
+      "entitySuffix": "%"
+    },
+    "rules": {}
+  },
+  "nlgManager": {
+    "settings": {
+      "tag": "nlg-manager"
+    },
+    "responses": {
+      "es": {
+        "nombot.nombot": [
+          {
+            "answer": "Mi nombre es PostgradIA 🤖"
+          }
+        ],
+        "saludo.saludo": [
+          {
+            "answer": "Hola, ¿cómo te puedo ayudar? 😄"
+          }
+        ],
+        "despedida.despedida": [
+          {
+            "answer": "¡Adios! 👋 Espero haberte ayudado."
+          },
+          {
+            "answer": "Hasta luego, que tengas un buen dia. 👋"
+          },
+          {
+            "answer": "Nos vemos pronto. 👋 ¡Vuelve cuando quieras!"
+          },
+          {
+            "answer": "Bye cuidate, 👋 si tienes otra consulta no olvides preguntarme!"
+          }
+        ],
+        "gracias.gracias": [
+          {
+            "answer": "¡Feliz de ayudar! 😄 Si tienes otra consulta no olvides preguntarme!"
+          },
+          {
+            "answer": "Es un placer ayudarte. 😄 ¡No olvides preguntarme si tienes otra duda!"
+          }
+        ],
+        "inscripcion.inscripcion": [
+          {
+            "answer": "Para comenzar el registro, necesitaré que propociones tus datos para poder contactarte. \n¿Deseas inscribirte? 🤗"
+          }
+        ],
+        "facultades.fac_cmar": [
+          {
+            "answer": "La facultad de Ciencias del Mar tiene las siguientes maestrías disponibles: \n\nMaestría en Acuicultura\n\nMaestría en Biodiversidad y Cambio Climático\n\nPuedes consultar mas información haciendo click en una maestría, y luego en enviar."
+          }
+        ],
+        "maestria.acuicultura": [
+          {
+            "answer": "La Maestría en Acuicultura contiene lo siguiente: \n\n  Título a obtener: \n\n  Magíster en Acuicultura\n\n  Duración: 2 Semestres Académicos\n\n  Resolución CES: RPC-SO-18-No.293-2023\n\n  Modalidad: Híbrida \nSi quieres más información visita este 👉 <a href=\"https://www.upse.edu.ec/postgrado/index.php/acuicultura\" target=\"_blank\">enlace</a> o comunícate al 📧 <a href=\"mailto:maestria.acuicultura@upse.edu.ec\">correo</a>.\n  \nO intenta una de estas opciones 👇\n  \n¿Cuál es el costo de Acuicultura?\n  \n¿Cuál es la malla de Acuicultura?\n  "
+          }
+        ],
+        "maestria.costo_acui": [
+          {
+            "answer": "La maestría de Acuicultura tiene un arancel de $3700 dólares y matrícula de $300 dólares que dan un total de $4000 dólares. \nRecuerda que hay diferentes descuentos a la que puedes aplicar.\n    \n¿Cuáles son esos descuentos?\n    "
+          }
+        ],
+        "modulos.mod_acui": [
+          {
+            "answer": "La maestría de Acuicultura tiene: \n    \n\n    2 periodos académicos\n\n    12 módulos (asignaturas)\n\n    Dime las asignaturas de acuicultura\n    "
+          }
+        ],
+        "modulos.asig_acui": [
+          {
+            "answer": "Puedes revisar la malla de la maestría de <b>Acuicultura</b> con sus módulos (asignaturas) con más detalles\n      ingresando a este 👉 <a href=\"https://www.upse.edu.ec/postgrado/images/2022/maestrias/acuicultura/malla-acuicultura.pdf\" target=\"_blank\">link</a>.\n\n    "
+          }
+        ]
+      }
+    }
+  },
+  "actionManager": {
+    "settings": {
+      "tag": "action-manager"
+    },
+    "actions": {}
+  },
+  "slotManager": {}
+}
